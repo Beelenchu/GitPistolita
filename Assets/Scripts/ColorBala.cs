@@ -25,7 +25,7 @@ public class ColorBala : MonoBehaviour
             }
         }
 
-        Debug.Log("se a contado " + cont);
+        //Debug.Log("se a contado " + cont);
 
         switch (cont)
         {

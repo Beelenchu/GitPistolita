@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3630714766682093244}
   - component: {fileID: 5986245536597479506}
   - component: {fileID: 9146886487183139256}
-  - component: {fileID: 414992277235126905}
   - component: {fileID: 9121725151992220706}
   - component: {fileID: 3936695013666987864}
-  - component: {fileID: 3359275369386142713}
+  - component: {fileID: 8515126680007744168}
+  - component: {fileID: 1004437152445868387}
   m_Layer: 0
   m_Name: BALA
-  m_TagString: Untagged
+  m_TagString: bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375752563077969454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.24, y: 3.2, z: -32.82}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,19 +95,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &414992277235126905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375752563077969454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7225fe732ec85c345ae05fecb1cfbeb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 60
 --- !u!54 &9121725151992220706
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -116,14 +103,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375752563077969454}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 1
-  m_AngularDrag: 0.05
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &3936695013666987864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054e2bab4b18eac4e8ab40da536c5c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3359275369386142713
+--- !u!114 &8515126680007744168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,3 +135,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aced6244c678f53448e3776a541b036b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balita: {fileID: 375752563077969454}
+--- !u!114 &1004437152445868387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375752563077969454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7225fe732ec85c345ae05fecb1cfbeb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 100
