@@ -5,25 +5,34 @@ using UnityEngine;
 public class Creador : MonoBehaviour
 {
     public GameObject monos;
-    public float Tiempocreacion = 5f, Rangocreacion = 80f;
+    public GameObject[] monosList;
+    public float Tiempocreacion = 5f;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Creando",0.0f, Tiempocreacion);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        monosList = GameObject.FindGameObjectsWithTag("Creeper");
+        if (monosList.Length == 0) 
+        {
+            Creando();
+            Debug.Log(monosList.Length);
+        }
     }
     public void Creando()
     {
-        //transform.position = new Vector3(Mathf.PingPong(Time.time * velocidad, distancia) + posRandom, transform.position.y, posa);
-        Vector3 pos = new Vector3(0,0,0);
-        pos = this.transform.position + Random.onUnitSphere * Rangocreacion;
-        pos = new Vector3(pos.x-150, this.transform.position.y, 90);
-        Debug.Log("Pos ini ->" + pos.x);
-        GameObject mono = Instantiate(monos, pos, Quaternion.identity);
+        for (int i = 0; i < 3; i++)
+        {
+            Vector3 pos2 = new Vector3(Random.Range(155f,268f),-15.8f,Random.Range(405f,273f));
+            Instantiate(monos, pos2, transform.rotation);
+            
+        }
+     
+        
+      
     }
 }

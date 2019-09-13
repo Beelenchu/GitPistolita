@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 9146886487183139256}
   - component: {fileID: 9121725151992220706}
   - component: {fileID: 3936695013666987864}
-  - component: {fileID: 8515126680007744168}
   - component: {fileID: 1004437152445868387}
+  - component: {fileID: 3942148632823018092}
   m_Layer: 0
   m_Name: BALA
   m_TagString: bala
@@ -123,19 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054e2bab4b18eac4e8ab40da536c5c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8515126680007744168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375752563077969454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aced6244c678f53448e3776a541b036b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balita: {fileID: 375752563077969454}
 --- !u!114 &1004437152445868387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,3 +136,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 100
+--- !u!114 &3942148632823018092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375752563077969454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aced6244c678f53448e3776a541b036b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

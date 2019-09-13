@@ -4,16 +4,29 @@ using UnityEngine;
 
 public class MoveRandom : MonoBehaviour
 {
-    public float velocidad = 10f;
+    public GameObject mono;
+   
+    public float velocidad;
+    public float distancia;
+  
+    float posini;
+    float posa;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       
+        posini = transform.position.x;
+        posa = transform.position.z;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * velocidad * Time.deltaTime;
+
+
+        transform.position = new Vector3(Mathf.PingPong(Time.time * velocidad, distancia) + posa, transform.position.y, posini);
+
+        Destroy(mono, 3f);
+
     }
 }
