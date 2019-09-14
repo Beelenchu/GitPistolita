@@ -26,7 +26,7 @@ public class MoveRandom : MonoBehaviour
 
         transform.position = new Vector3(Mathf.PingPong(Time.time * velocidad, distancia) + posa, transform.position.y, posini);
 
-        Destroy(mono, 3f);
+       
 
     }
 }

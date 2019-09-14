@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ColorBala : MonoBehaviour
 {
-    int cont = 0;
+    int cont;
     Renderer colorcubo;
     // Start is called before the first frame update
     void Start()

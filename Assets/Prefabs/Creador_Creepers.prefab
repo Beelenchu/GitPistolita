@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &800100680046982796
+--- !u!1 &6003997603197919527
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 800100680046982798}
-  - component: {fileID: 800100680046982799}
+  - component: {fileID: 6003997603197919525}
+  - component: {fileID: 6003997603197919526}
   m_Layer: 0
   m_Name: Creador_Creepers
   m_TagString: Untagged
@@ -17,32 +17,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &800100680046982798
+--- !u!4 &6003997603197919525
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800100680046982796}
+  m_GameObject: {fileID: 6003997603197919527}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 225.99, y: -19.1, z: 292.3}
+  m_LocalPosition: {x: 336, y: -19.1, z: 110}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &800100680046982799
+--- !u!114 &6003997603197919526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800100680046982796}
+  m_GameObject: {fileID: 6003997603197919527}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67233f2aa81681d48abcf6dafbcc0b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monos: {fileID: 8751210399010478270, guid: e2f3ed6cdc1df1e49ad776ca2a829e3b, type: 3}
-  Tiempocreacion: 5
-  Rangocreacion: 80
+  monos: {fileID: 2862485302053989846, guid: 374ec6bb9df851e4e9f58ed96fbe74ce, type: 3}
+  maxcreeper: 3

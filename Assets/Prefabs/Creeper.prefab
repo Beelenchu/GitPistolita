@@ -287,6 +287,8 @@ GameObject:
   - component: {fileID: 2862485302053989840}
   - component: {fileID: 6673424460812826703}
   - component: {fileID: 2237638554789776255}
+  - component: {fileID: 5269846092431046812}
+  - component: {fileID: 2666028324570779681}
   m_Layer: 0
   m_Name: Creeper
   m_TagString: Creeper
@@ -384,7 +386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mono: {fileID: 2862485302053989846}
-  velocidad: 5
+  velocidad: 7
   distancia: 10
 --- !u!54 &2237638554789776255
 Rigidbody:
@@ -402,6 +404,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5269846092431046812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2862485302053989846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb25638284eb82d45adb9a1edf809192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValor: 10
+--- !u!114 &2666028324570779681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2862485302053989846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2804f5019daa4f84b81763df86244281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VidaE: 180
+  RestarVida: 36
+  muerto: 0
 --- !u!1 &2862485302325540431
 GameObject:
   m_ObjectHideFlags: 0

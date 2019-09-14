@@ -14,7 +14,7 @@ public class Instancia : MonoBehaviour
         {
            
             GameObject cubebala = Instantiate(obj, transform.position, transform.rotation) as GameObject;    
-            Destroy(cubebala, 1f);  
+            Destroy(cubebala, 5f);  
             
           
         }

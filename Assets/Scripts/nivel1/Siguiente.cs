@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Siguiente : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void next()
+ 
+ 
+    public void next( string nombre)
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(nombre);
+       
     }
+    
+
 }
